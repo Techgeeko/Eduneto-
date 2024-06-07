@@ -9,8 +9,6 @@ import RecentTransactions from '@/components/Sections/Dashboard/RecentTransactio
 import UpcomingDeadlines from '@/components/Sections/Dashboard/UpcomingDeadlines';
 import Image from 'next/image';
 
-
-
 const Dashboard = () => {
   const { user } = useUser();
 
@@ -27,34 +25,34 @@ const Dashboard = () => {
   return (
     <>
       <div className='flex justify-between'>
-      <div className="greeting text-2xl font-bold text-black sm:text-xs lg:text-lg">
-      Good {greeting}, {user ? user.firstName : ''}
-      <p className='lg:text-15 font-light sm:text-xs pt-1'>
-        Let's get started with ☕</p>
-    </div>
-    <div className='flex'>
-        <div>
-          <Image
-            src='/assets/icons/notix.svg'
-            alt='Icon'
-            width={150}
-            height={50}
-           />
+        <div className="greeting text-2xl font-bold text-black sm:text-xs lg:text-lg">
+          Good {greeting}, {user ? user.firstName : ''}
+          <p className='lg:text-15 font-light sm:text-xs pt-1'>
+            Let&apos;s get started with ☕
+          </p>
         </div>
-        <div className="order-button">
-          <Link href="/order/create">
-            <Button className='bg-black p-5 hover:bg-zinc-900 font-bold py-2 px-4 rounded hover:animate-shrink'>
-              Create Order
-            </Button>
-          </Link>
+        <div className='flex'>
+          <div>
+            <Image
+              src='/assets/icons/notix.svg'
+              alt='Icon'
+              width={150}
+              height={50}
+            />
+          </div>
+          <div className="order-button">
+            <Link href="/order/create">
+              <Button className='bg-black p-5 hover:bg-zinc-900 font-bold py-2 px-4 rounded hover:animate-shrink'>
+                Create Order
+              </Button>
+            </Link>
+          </div>
         </div>
-    </div>
-        
       </div>
 
       {/* Stats Section */}
       <div className='pt-10'>
-          <Stats />
+        <Stats />
       </div>
 
       {/* Recent Transactions Section */}
