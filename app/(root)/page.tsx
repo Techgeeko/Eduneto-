@@ -25,9 +25,9 @@ const Dashboard = () => {
   return (
     <>
       <div className='flex justify-between'>
-        <div className="greeting text-2xl font-bold text-black sm:text-xs lg:text-lg">
-          Good {greeting}, {user ? user.firstName : ''}
-          <p className='lg:text-15 font-light sm:text-xs pt-1'>
+        <div className="">
+          <p className="greeting text-5xl font-bold text-black sm:text-xxs md:text-10 lg:text-lg"> Good {greeting}, {user ? user.firstName : ''} </p>
+          <p className='lg:text-15 font-light sm:text-xxs pt-1'>
             Let&apos;s get started with ☕
           </p>
         </div>

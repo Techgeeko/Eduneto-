@@ -19,9 +19,15 @@ const config = {
     },
     extend: {
       fontSize: {
+        'xxs': '5px',
         '10': '10px',
         '15': '15px',
         '20': '20px',
+      },
+      variants: {
+        extend: {
+          fontSize: ['responsive'],
+        },
       },
       colors: {
         border: "hsl(var(--border))",
