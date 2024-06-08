@@ -1,4 +1,4 @@
-import { Schema, model, Document, models } from 'mongoose';
+import { Schema, model, models } from 'mongoose';
 
 // Step 1: Define the Transaction Schema
 const TransactionSchema = new Schema(

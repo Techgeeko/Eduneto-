@@ -1,4 +1,4 @@
-import { Schema, model, Document, models } from 'mongoose';
+import { Schema, model, models } from 'mongoose';
 
 // Step 1: Define the User Schema
 const UserSchema = new Schema(
@@ -18,12 +18,17 @@ const UserSchema = new Schema(
         required: true, 
         unique: true 
     },
+    photo: {
+        type: String,
+        required: true,
+    },
     firstName: { 
         type: String,
     },
     lastName: { 
         type: String,
     },
+    
   }
 );
 
